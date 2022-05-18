@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+body {
+    height: 100%;
+    color: white;
+}
+
+.background-img {
+    z-index: -1;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("assets/daniel-olah-HNkgPFBShSw-unsplash.jpg");
+    max-height: 100%;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.5%;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5%;
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: 5px;
+    width: 95%;
+}
+
+.moble-aside {
+    display: flex;
+    align-items:center;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+}
+.logo {
+    width: 4rem;
+    margin-right: 1rem;
+}
+.moble-aside-text {
+    display: flex;
+    flex-direction: column;
+}
+.moble-aside-text h1{
+    font-size: 2rem;
+}
+
+.sign-up-message {
+    margin: 0 auto;
+    width: 85%;
+    padding-bottom: 3rem;
+}
+
+.form-container {
+    padding-top: 3rem;
+    margin: 0 auto;
+    background-color: darkgrey;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.form-header {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    max-width: 200px;
+}
+
+form {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-input-div {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+label{
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+.submit-btn-div {
+    display: flex;
+    justify-content: center;
+    margin: 4rem auto 2rem auto;
+    padding-top: 3rem;
+    width: 85%;
+    border-top: 2px solid rgba(0, 0, 0, .2);
+}

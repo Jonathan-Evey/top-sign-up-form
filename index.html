@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,54 +35,57 @@
             <p>No time like the present.</p>
         </div>
         <div class="form-container">
-            <div class="form-header">
-                <h2>Sign Up Now</h2>
+            <div class="form-input-group">
+                <div class="form-header">
+                    <h2>Sign Up Now</h2>
+                </div>
+                <form>
+                    <div class="form-group-row">
+                        <div class="single-input-div">
+                            <label for="first-name">
+                                <span>First name</span>
+                            </label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="single-input-div">
+                            <label for="last-name">
+                                <span>Last name</span>
+                            </label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                    </div>
+                    <div class="form-group-row">
+                        <div class="single-input-div">
+                            <label for="email">
+                                <span>Email</span>
+                            </label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="single-input-div">
+                            <label for="confirm-email">
+                                <span>Confirm email</span>
+                            </label>
+                            <input type="email" name="confirm-email" id="confirm-email">
+                        </div>
+                    </div>
+                    <div class="form-group-row">
+                        <div class="single-input-div">
+                            <label for="pwd">
+                                <span>Password</span>
+                            </label>
+                            <input type="password" name="password" id="pwd">
+                        </div>
+                        <div class="single-input-div">
+                            <label for="confirm-pwd">
+                                <span>Confirm password</span>
+                            </label>
+                            <input type="password" name="confirm-password" id="confirm-pwd">
+                        </div>
+                    </div>
             </div>
-            <form>
-                <div class="form-group-row">
-                    <div class="single-input-div">
-                        <label for="first-name">
-                            <span>First name</span>
-                        </label>
-                        <input type="text" name="first-name" id="first-name">
-                    </div>
-                    <div class="single-input-div">
-                        <label for="last-name">
-                            <span>Last name</span>
-                        </label>
-                        <input type="text" name="last-name" id="last-name">
-                    </div>
-                </div>
-                <div class="form-group-row">
-                    <div class="single-input-div">
-                        <label for="email">
-                            <span>Email</span>
-                        </label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="single-input-div">
-                        <label for="confirm-email">
-                            <span>Confirm email</span>
-                        </label>
-                        <input type="email" name="confirm-email" id="confirm-email">
-                    </div>
-                </div>
-                <div class="form-group-row">
-                    <div class="single-input-div">
-                        <label for="pwd">
-                            <span>Password</span>
-                        </label>
-                        <input type="password" name="password" id="pwd">
-                    </div>
-                    <div class="single-input-div">
-                        <label for="confirm-pwd">
-                            <span>Confirm password</span>
-                        </label>
-                        <input type="password" name="confirm-password" id="confirm-pwd">
-                    </div>
-                </div>
                 <div class="submit-btn-div">
                     <button type="submit">Create Account</button>
+                    <p class="login-message">Already have an accout? <a href="#">Log In</a></p>
                 </div>
             </form>
         </div>

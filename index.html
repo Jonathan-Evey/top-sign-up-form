@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -45,13 +45,13 @@
                             <label for="first-name">
                                 <span>First name</span>
                             </label>
-                            <input type="text" name="first-name" id="first-name">
+                            <input type="text" name="first-name" id="first-name" required>
                         </div>
                         <div class="single-input-div">
                             <label for="last-name">
                                 <span>Last name</span>
                             </label>
-                            <input type="text" name="last-name" id="last-name">
+                            <input type="text" name="last-name" id="last-name" required>
                         </div>
                     </div>
                     <div class="form-group-row">
@@ -59,27 +59,27 @@
                             <label for="email">
                                 <span>Email</span>
                             </label>
-                            <input type="email" name="email" id="email">
+                            <input placeholder="Example@email.com" type="email" name="email" id="email" pattern="([a-zA-Z0-9\\_\\-\\.]+)@([a-zA-Z]+).(.+)" title="Please enter a valid email" required>
                         </div>
                         <div class="single-input-div">
                             <label for="confirm-email">
                                 <span>Confirm email</span>
                             </label>
-                            <input type="email" name="confirm-email" id="confirm-email">
+                            <input placeholder="Example@email.com" type="email" name="confirm-email" id="confirm-email" required>
                         </div>
                     </div>
                     <div class="form-group-row">
                         <div class="single-input-div">
                             <label for="pwd">
-                                <span>Password</span>
+                                <span class="password-error">Password</span>
                             </label>
-                            <input type="password" name="password" id="pwd">
+                            <input class="password-error" placeholder="Must be at least 8 characters" type="password" name="password" id="pwd" required>
                         </div>
                         <div class="single-input-div">
                             <label for="confirm-pwd">
-                                <span>Confirm password</span>
+                                <span class="confirm-password-error">Confirm password</span>
                             </label>
-                            <input type="password" name="confirm-password" id="confirm-pwd">
+                            <input class="password-error" placeholder="Must be at least 8 characters" type="password" name="confirm-password" id="confirm-pwd" title="Both passwords must match" required>
                         </div>
                     </div>
             </div>
